@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HTML5 Demo: getUserMedia (Treehouse Blog)</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/videoo.css' %}">
+  <script src="{% static 'js/videoo.js' %}"></script>
+  <!--<link rel="stylesheet" href="{% static 'css/videoo.js' %}">-->
+</head>
+<body>
+<h1>Camera: </h1>
+  <div id="video-container">
+    <video id="camera-stream" width="500" autoplay></video>
+    
+  </div>
+  <a href="{% url 'click' %}" style="width:650px;">click me to Take a picture</a>
+</body>
+</html>
